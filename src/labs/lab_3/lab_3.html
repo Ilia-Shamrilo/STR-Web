@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>InnovateInProducts</title>
+  <link rel="stylesheet" type="text/css" media="all" href="styles/lab_3.css">
+</head>
+
+<body>
+<div class="top-bar">
+</div>
+<h1 class="title">InnovateInProducts</h1>
+<form action="/registration_form" method="post" class="form">
+  <h1 class="h1">Регистрация</h1>
+    <label for="name" class="label">Введите имя:</label>
+    <input class="input" type="text" id="name" required placeholder="Ваше имя">
+    <label for="surname" class="label">Введите фамилию:</label>
+    <input class="input" type="text" id="surname" required placeholder="Ваша фамилия">
+    <label for="tel" class="label">Введите телефон:</label>
+    <input class="input" type="tel" id="tel" required placeholder="+375 (xx) xxx-xx-xx" pattern="\+375\d{9}">
+    <label for="password" class="label">Введите пароль:</label>
+    <input class="input" type="password" id="password" required placeholder="Пароль" minlength="5">
+    <label for="passrep" class="label">Подтвердите пароль:</label>
+    <input class="input" type="password" name="repeatPassword" id="passrep" required placeholder="Пароль еще раз">
+    <fieldset class="checkbox">
+      <legend>Пол</legend>
+        <input type="radio" id="man" name="gender" value="man">
+        <label for="man">Мужской</label>
+        <input type="radio" id="women" name="gender" value="women">
+        <label for="women">Женский</label>
+    </fieldset>
+  <fieldset class="checkbox">
+    <legend>Дополнительные данные</legend>
+    <label for="newsletter">Подписаться на рассылку</label>
+    <input type="checkbox" id="newsletter" name="newsletter">
+      <br><br>
+      <label for="file">Загрузить фото</label>
+      <input type="file" id="file" name="file">
+  </fieldset>
+
+  <button class="btn" type="submit">Зарегистрироваться</button>
+  <button class="btn" type="reset">Сбросить</button>
+
+</form>
+</body>
+</html>
